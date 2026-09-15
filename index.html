@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Danar Tan — Resume</title>
+<meta name="description" content="Danar Tan — Computer Science (Data Science & AI) student at Monash University. AI engineering, retrieval systems, data pipelines, and video production.">
+<meta property="og:title" content="Danar Tan — Resume">
+<meta property="og:description" content="Computer Science (Data Science & AI) at Monash University. Co-founder and engineer building a voice-based AI tutor.">
+<meta property="og:type" content="profile">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%231f3a5f'/><text x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='700' fill='white' text-anchor='middle'>DT</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --paper: #ffffff;
+    --ink: #1b1d21;
+    --muted: #5d6470;
+    --faint: #8a909a;
+    --rule: #e4e1da;
+    --accent: #1f5fae;
+    --chip: #f1efe9;
+    --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121417;
+      --paper: #181b1f;
+      --ink: #e8e9eb;
+      --muted: #a3a9b3;
+      --faint: #7c838d;
+      --rule: #2b2f35;
+      --accent: #7fb0ec;
+      --chip: #23272d;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 15.5px/1.6 var(--sans);
+    padding-inline: 16px;
+    padding-block: 48px 72px;
+  }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:hover { text-decoration-thickness: 2px; }
+
+  .sheet {
+    max-width: 860px;
+    margin: 0 auto;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 56px 64px;
+  }
+
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 28px; margin-bottom: 8px; }
+  h1 {
+    font: 700 clamp(2.2rem, 6vw, 3rem)/1.05 var(--serif);
+    letter-spacing: -0.01em;
+    margin: 0 0 6px;
+  }
+  .tagline { color: var(--muted); margin: 0 0 18px; font-size: 1.02rem; }
+  .contact {
+    display: flex; flex-wrap: wrap; gap: 8px 20px;
+    list-style: none; padding: 0; margin: 0 0 20px;
+    color: var(--muted); font-size: 0.94rem;
+  }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn {
+    font: 500 0.9rem/1 var(--sans);
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 16px; border-radius: 8px;
+    border: 1px solid var(--rule); background: var(--paper); color: var(--ink);
+    text-decoration: none; cursor: pointer;
+  }
+  .btn:hover { border-color: var(--faint); text-decoration: none; }
+  .btn.primary { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .btn.primary:hover { opacity: 0.88; }
+
+  nav.toc {
+    display: flex; flex-wrap: wrap; gap: 6px 18px;
+    font-size: 0.85rem; padding: 14px 0 0;
+  }
+  nav.toc a { color: var(--muted); text-decoration: none; }
+  nav.toc a:hover { color: var(--accent); }
+
+  section { padding-top: 36px; }
+  h2 {
+    font: 600 0.78rem/1 var(--sans);
+    text-transform: uppercase; letter-spacing: 0.14em;
+    color: var(--faint);
+    margin: 0 0 18px;
+    scroll-margin-top: 24px;
+  }
+
+  .entry { margin-bottom: 28px; }
+  .entry:last-child { margin-bottom: 0; }
+  .entry-head {
+    display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;
+    gap: 2px 16px;
+  }
+  h3 { font: 600 1.18rem/1.3 var(--serif); margin: 0; }
+  .when { color: var(--muted); font-size: 0.9rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .where {
+    display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 16px;
+    color: var(--muted); font-size: 0.93rem; margin: 2px 0 10px;
+  }
+  .where em { font-style: normal; }
+
+  ul.points { margin: 0; padding-left: 1.1em; }
+  ul.points li { margin: 0 0 6px; padding-left: 2px; }
+  ul.points li::marker { color: var(--faint); }
+  strong { font-weight: 600; }
+  code { font: 0.88em ui-monospace, "SF Mono", Consolas, monospace; background: var(--chip); padding: 1px 5px; border-radius: 4px; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; padding: 0; margin: 0 0 12px; }
+  .chips li { background: var(--chip); color: var(--muted); font-size: 0.8rem; padding: 3px 9px; border-radius: 999px; }
+
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 0 0 16px; }
+  .stat { border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px; }
+  .stat b { display: block; font: 700 1.35rem/1.2 var(--serif); }
+  .stat span { color: var(--muted); font-size: 0.82rem; }
+
+  dl.skills { display: grid; grid-template-columns: 11rem 1fr; gap: 10px 20px; margin: 0; }
+  dl.skills dt { font-weight: 600; font-size: 0.93rem; }
+  dl.skills dd { margin: 0; color: var(--ink); }
+
+  .prose p { margin: 0 0 12px; }
+  .prose p:last-child { margin: 0; }
+
+  footer { max-width: 860px; margin: 20px auto 0; text-align: center; color: var(--faint); font-size: 0.8rem; }
+
+  @media (max-width: 640px) {
+    body { padding-block: 16px 40px; font-size: 15px; }
+    .sheet { padding: 32px 20px; border-radius: 8px; }
+    dl.skills { grid-template-columns: 1fr; gap: 2px; }
+    dl.skills dd { margin-bottom: 12px; }
+  }
+
+  @media print {
+    :root { --bg: #fff; --paper: #fff; --ink: #000; --muted: #333; --faint: #555; --rule: #bbb; --accent: #1a4f99; --chip: #fff; }
+    @page { margin: 14mm 14mm; }
+    body { padding: 0; font-size: 10pt; line-height: 1.4; }
+    .sheet { border: 0; padding: 0; max-width: none; }
+    .actions, nav.toc, footer { display: none; }
+    section { padding-top: 16px; }
+    h2 { margin-bottom: 8px; border-bottom: 1px solid var(--rule); padding-bottom: 4px; }
+    .entry { margin-bottom: 12px; }
+    .entry-head, .where { break-inside: avoid; break-after: avoid; }
+    ul.points li { margin-bottom: 2px; }
+    .chips li { border: 1px solid var(--rule); padding: 0 6px; }
+    .stat { padding: 6px 10px; }
+    a { color: inherit; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<main class="sheet">
+
+  <header>
+    <h1>Danar Tan</h1>
+    <p class="tagline">Computer Science (Data Science &amp; AI) at Monash University · Co-founder and engineer building a voice-based AI tutor</p>
+    <ul class="contact">
+      <li><a href="mailto:danarrtan@gmail.com">danarrtan@gmail.com</a></li>
+      <li><a href="https://linkedin.com/in/danar-tan" target="_blank" rel="noopener">linkedin.com/in/danar-tan</a></li>
+      <li>Clayton, VIC 3168</li>
+    </ul>
+    <div class="actions">
+      <a class="btn primary" href="mailto:danarrtan@gmail.com">Get in touch</a>
+      <button class="btn" type="button" onclick="window.print()">Save as PDF</button>
+    </div>
+    <nav class="toc" aria-label="Sections">
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#esports">Esports &amp; Coaching</a>
+      <a href="#skills">Skills</a>
+    </nav>
+  </header>
+
+  <!-- ============ EDUCATION ============ -->
+  <section aria-labelledby="education">
+    <h2 id="education">Education</h2>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Monash University</h3>
+        <span class="when">Jul 2025 – Jul 2027</span>
+      </div>
+      <div class="where"><em>Bachelor of Computer Science, Data Science and Artificial Intelligence · currently enrolled</em><span>Clayton, VIC</span></div>
+      <ul class="points">
+        <li><strong>WAM 71.214, GPA 2.750.</strong> Expected course completion July 2027; conferral late 2027.</li>
+        <li><strong>Completed:</strong> Databases (FIT2094, HD 81), Fundamentals of Algorithms (FIT1008, D 78), Introduction to Data Science (FIT1043, D 71), Algorithms and Data Structures (FIT2004, 69), Modelling for Data Analysis (FIT2086, 67), Theory of Computation (FIT2014, 66), Data Visualisation (FIT2179, 60, Vega-Lite), Research Experimentation and Discovery (MON3500, HD 81), Volunteering in Practice (MON2000), Industry Based Learning Seminar (FIT2108)</li>
+        <li><strong>Semester 2 2026:</strong> Artificial Intelligence (FIT3080), Deep Learning (FIT3181), Data Analytics (FIT3152), Deep Tech Entrepreneurship (FIT3195)</li>
+        <li><strong>Credited from diploma:</strong> Introduction to Programming (FIT1045), Fundamentals of C++ (FIT1048), Computer Systems Networks and Security (FIT1047), Foundations of Computing (FIT1058), IT Professional Practice (FIT1049), Foundations of 3D (FIT1033, Maya), Engineering Mathematics (ENG1005), Analysis of Change (MTH1020), Discrete Mathematics for Computer Science (MAT1830)</li>
+        <li>Awarded High Distinction and the <strong>Research for Translational Impact badge</strong> (MON3500) for a study on repurposing mRNA manufacturing capacity outside a pandemic</li>
+        <li>Placed 1st of four teams in a Deep Learning (FIT3181) image classification competition on Kaggle</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Monash College, Jakarta International College</h3>
+        <span class="when">Jul 2024 – May 2025</span>
+      </div>
+      <div class="where"><em>Diploma of Information Technology, credited to Monash · WAM 75.56</em><span>Jakarta, Indonesia</span></div>
+      <ul class="points">
+        <li>Fundamentals of C++ (HD 92), Introduction to Computer Systems Networks and Security (HD 89), Professional Practice (HD 88), Introduction to Programming (HD 87), Discrete Mathematics for Computer Science (HD 84), Engineering Mathematics (D 72), Advanced Mathematics (C 67), Foundations of 3D (P 53)</li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section aria-labelledby="experience">
+    <h2 id="experience">Experience</h2>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Co-founder and Engineer</h3>
+        <span class="when">Jul 2026 – Present</span>
+      </div>
+      <div class="where"><em>AI Tutoring Startup · four-person founding team</em><span>Melbourne, VIC</span></div>
+      <ul class="chips" aria-label="Stack">
+        <li>AWS Bedrock</li><li>Nova Sonic 2</li><li>Claude Sonnet</li><li>Python</li><li>TypeScript</li><li>Node.js</li><li>Docker</li>
+      </ul>
+      <ul class="points">
+        <li>Co-founded a voice-based AI tutor for VCE maths, taking it from concept to working prototype with a four-person team alongside full-time study</li>
+        <li>Architected a three-agent separation of concerns — an orchestrator that plans each session and writes tier-specific prompts, a reasoning supervisor (Claude Sonnet) that acts per turn, marks answers and drives a shared whiteboard, and a voice model (AWS Nova Sonic 2) restricted to conversation — so subject-matter authority never sits in the speech tier</li>
+        <li>Eliminated ungrounded model output across all tutoring sessions by building the retrieval-augmented generation layer over AWS Bedrock, constraining every response to approved curriculum content rather than unconstrained generation — the product’s commercial differentiator over general-purpose study chatbots</li>
+        <li>Unified retrieval access by mapping both the orchestrator’s and the supervisor’s calls onto a single retriever interface</li>
+        <li>Preserved worked-example integrity during mid-session retrieval by tuning chunk boundaries so a solution never separates from its problem — a boundary problem found by inspecting outputs rather than trusting defaults</li>
+        <li>Enabled retrieval quality to be scored and regression-tested offline, before any cloud infrastructure existed, by building a local vector index (sentence embeddings, cosine similarity, versioned on disk) behind the same interface as the Bedrock knowledge base</li>
+        <li>Removed a full-response blocking wait from every spoken turn by implementing asynchronous tool calling, so the voice model begins speaking while content is still streaming from the supervisor</li>
+        <li>Designed the multimodal interaction: a student touches the exact line of a worked example they do not understand, and that gesture routes to the supervisor on its own event channel rather than through the voice session, so the spoken reply lands at the next turn boundary instead of interrupting them</li>
+        <li>Designed a three-phase tutoring model of probe, plan, teach — the system quizzes to build a knowledge graph of what the student knows, binary searches across topic difficulty and depth to locate the edge of that graph, then plans a teaching roadmap (rendered as a Mermaid diagram) targeting their zone of proximal development</li>
+        <li>Kept the transcript and whiteboard as the accessibility baseline that always works, with voice as an enhancement rather than the only way in</li>
+        <li>Built and scripted a document ingestion pipeline converting textbook PDFs into markdown that chunks cleanly and ingests without losing mathematical notation, resilient to malformed and inconsistent inputs</li>
+        <li>Deployed and operated the system on AWS (Bedrock, S3, Fargate, Cognito) with Docker</li>
+        <li>Shipped features using AI-assisted development throughout, writing specifications first and reviewing every change — extensive Claude Code, some GitHub Copilot</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Coding Clerk</h3>
+        <span class="when">May 2026 – Present</span>
+      </div>
+      <div class="where"><em>Law Image</em><span>Melbourne CBD, VIC</span></div>
+      <ul class="points">
+        <li>Process and quality-check high-volume legal document sets to strict accuracy standards under tight turnaround times, in a structured, compliance-driven workflow</li>
+        <li>Operate printing and scanning equipment, preparing documents to deadline</li>
+        <li>Manage multiple concurrent workstreams and escalate discrepancies rather than passing errors downstream</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Media Officer</h3>
+        <span class="when">Aug 2026 – Present</span>
+      </div>
+      <div class="where"><em>WIRED, Faculty of Information Technology Society, Monash University</em><span>Clayton, VIC</span></div>
+      <ul class="points">
+        <li>Edit reels for the society’s Instagram and TikTok channels</li>
+        <li>Work with the marketing team to improve the handoff between filming and editing, setting out what editors need from a shoot so footage arrives ready to cut and holds retention once published</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Volunteer Buddy</h3>
+        <span class="when">Feb 2026 – Jun 2026</span>
+      </div>
+      <div class="where"><em>Flying Fox · disability support program</em><span>St Kilda, VIC</span></div>
+      <ul class="points">
+        <li>Completed Flying Fox’s skills-based Buddy training in disability, inclusion, communication and personal support before working with any participant</li>
+        <li>Supported young people with disability across weekly Hangouts and mini-camps on a 2:1 buddy-to-participant model, running inclusive recreational activities</li>
+        <li>Adapted communication to each participant’s access needs across five months of direct interaction, learning to explain things to the person in front of me because the same explanation never lands the same way twice</li>
+        <li>Worked alongside other volunteers and external organisations to keep programs safe, structured and predictable for participants</li>
+        <li>Worked from the social model of disability, where the barrier sits in the environment rather than the person — the same premise behind designing captions around the viewer instead of expecting the viewer to cope</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Freelance Video Editor and Motion Graphics Designer</h3>
+        <span class="when">2024 – Present</span>
+      </div>
+      <div class="where"><em>taxii_vfx · ten years editing, four professional</em><span>Remote</span></div>
+      <ul class="points">
+        <li>Delivered promos and tournament trailers for esports organisations including prolly2, Moose Wars and Brawl League, one trailer exceeding 110,000 views</li>
+        <li>Led creative direction on tournament trailers for high-profile clients, delivering to schedule across concurrent projects</li>
+        <li>Ran client work through Fiverr alongside organisation work, managing several projects at once to fixed deadlines with direct client communication throughout</li>
+        <li>Authored and burned in captions and subtitles (SRT, WebVTT) in English and Indonesian, adapting tone and pacing for two distinct audiences</li>
+        <li>Used motion graphics and kinetic type to carry what the audio is doing rather than only what was said — emphasis, pacing, sound design and music that plain caption tracks drop</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Content Team Lead</h3>
+        <span class="when">Apr 2025 – Jun 2025</span>
+      </div>
+      <div class="where"><em>Brawlhalla Media Project (<a href="https://www.tiktok.com/@sidesigalex" target="_blank" rel="noopener">tiktok.com/@sidesigalex</a>, NixUp)</em><span>Remote</span></div>
+      <div class="stats">
+        <div class="stat"><b>59,000+</b><span>TikTok likes in two months</span></div>
+        <div class="stat"><b>300,000</b><span>views on top video</span></div>
+        <div class="stat"><b>10,000</b><span>YouTube views in week one</span></div>
+      </div>
+      <ul class="points">
+        <li>Built two social media brands from nothing — short-form on TikTok and long-form on YouTube — defining the editorial identity, content pillars and visual style for each rather than simply running accounts</li>
+        <li>Grew the TikTok account from zero to 59,000+ likes across 20 videos in two months, with a top video passing 300,000 views and 33,000 likes</li>
+        <li>Launched a companion YouTube channel that passed 10,000 views in its first week, covering the politics of the competitive scene, disputes between top players, news as it broke, and how players responded to patches and to the studio</li>
+        <li>Raised viewer retention by iterating video format, topic selection, editing pace and caption style across releases, reading each video’s performance to decide what the next one should be</li>
+        <li>Iterated caption style, placement, chunking and reading rate, testing each variant against retention to find what stayed legible inside a 9:16 frame with an interface overlaying it</li>
+        <li>Assembled and led a five-person cross-functional team of a voice actor, scriptwriters, a marketing lead and myself editing, across planning, scripting, editing and publishing</li>
+        <li>Brought two team members to independent delivery in Premiere Pro by teaching them from scratch, from caption editing and keyframing through to the full short-form workflow</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Crew Member</h3>
+        <span class="when">Oct 2025 – May 2026</span>
+      </div>
+      <div class="where"><em>KebabX</em><span>Clayton, VIC</span></div>
+      <ul class="points">
+        <li>Served customers in a fast-paced food environment, prepared menu items to food safety and hygiene standards, and processed cash and EFTPOS payments</li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section aria-labelledby="projects">
+    <h2 id="projects">Projects</h2>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Retention Router</h3>
+        <span class="when">2026</span>
+      </div>
+      <ul class="chips" aria-label="Stack">
+        <li>Python</li><li>TypeScript</li><li>Supabase/Postgres</li><li>ElevenLabs</li><li>Twilio</li>
+      </ul>
+      <ul class="points">
+        <li><strong>Forward: AI in Business Hackathon — shortlisted to the top 8 finalists.</strong> Assembled and led a four-person team, taking an outbound CRM voice agent for small-to-medium gyms from concept to a working deployed build, and delivered the pitch. Entered Track 3 (Solve a Business Problem) alongside the ElevenLabs Special Track</li>
+        <li>Identified the product’s defining rule as the calls <em>not</em> to make: a member on an auto-renewing contract who has stopped attending is the most profitable member the gym has, and a call can only remind them to cancel — so <code>auto_renew == true</code> is never called unless the member has already asked to cancel</li>
+        <li>Orchestrated a scheduled nightly pipeline that ingested three joined sources (members, contracts, check-ins), applied routing and eligibility rules, and recorded an actionable queue, re-evaluating eligibility at action time so stale state could never trigger a call</li>
+        <li>Managed external service configuration as code by making a versioned config module the single source of truth and writing a sync script to push it, with a dry-run mode that diffs live state against the repository before applying</li>
+        <li>Closed a class of configuration drift after finding a field set outside the repository had survived every sync, then extended the sync to own it and the dry run to report any it did not set</li>
+        <li>Traced the rule the product depended on to a single contract field and documented how each target platform exposes it — Mindbody directly, Glofox and PushPress by inference — making the inference the first thing to verify per integration</li>
+        <li>Segmented members into four call types (fixed term ending soon, lapsed but live, former members, and cancellation requests) with a distinct objective and offer policy for each</li>
+        <li>Documented data quality limits rather than leaving them implicit: a UTC clock misreading “today” for Australian users, a 1,000-row API limit truncating history in the queue view, and older exports overwriting newer contract state</li>
+        <li>Built a 31-scenario evaluation suite with every run committed to version control, and withdrew a reported accuracy figure after finding it was not reproducible across runs</li>
+        <li>Audited every committed agent turn after one transcript leaked platform markup into speech, found 32 leaked turns across 25 scenario runs (21 of which had passed), and pinned each new check to the turn that revealed it</li>
+        <li>Costed the system at $0.41 per marginal call and mapped the Australian regulatory obligations a real deployment would need (Spam Act, Do Not Call Register, calling hours, Privacy Act and APPs)</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Personal Analytics Dashboard</h3>
+        <span class="when">Aug 2026 – Present</span>
+      </div>
+      <ul class="chips" aria-label="Stack">
+        <li>Next.js</li><li>TypeScript</li><li>Claude API</li><li>libSQL/Turso</li><li>Vercel</li>
+      </ul>
+      <ul class="points">
+        <li>Built a daily dashboard combining journal, calendar and metrics (steps, gym logs, calories) that tracks adherence — how much of a plan actually gets followed</li>
+        <li>Built a tool-calling agent over my own data model: 10 domain tools, a capped iteration loop, per-turn re-grounding, and streamed NDJSON output to the client</li>
+        <li>Prevented the agent from bypassing invariants it was not trusted to encode by routing every tool call through the same transactional rules engine as the REST API</li>
+        <li>Deleted the agent after ten days, because I did not want an assistant I would not listen to — concluding the interaction model was wrong for the task rather than shipping it</li>
+        <li>Enforced stateless session auth at the edge runtime, which cannot load the database driver, using HMAC-signed expiring tokens with escalating lockouts and constant-time comparison</li>
+        <li>Achieved full unit-test coverage of scoring and date logic without mocks by isolating the rule set into pure, import-free modules</li>
+        <li>Made daily metrics interpretable at a glance by choosing chart encodings from data semantics — lines for quantities that persist between readings, bars from zero for quantities that reset, and never a zero plotted for a day with no data, which would misrepresent absence as a measurement</li>
+        <li>Removed the incentive to log dishonestly by designing entry so recording a missed day costs the same as recording a completed one, protecting the integrity of the underlying dataset</li>
+        <li>Built a stylus and touch surface where a pen draws and a finger scrolls on the same screen, disambiguated through Pointer Events ordering</li>
+        <li>Redesigned the layout around observed use rather than the original plan, moving what I acted on daily to where the eye lands first</li>
+        <li>Wrote the specifications and product rules first, then drove Claude Code against them as a pair programmer and reviewed every change</li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- ============ ESPORTS ============ -->
+  <section aria-labelledby="esports">
+    <h2 id="esports">Competitive Esports and Coaching</h2>
+    <div class="stats">
+      <div class="stat"><b>#1</b><span>2v2 Power Rank, Asia — two seasons</span></div>
+      <div class="stat"><b>3</b><span>Asian championship titles</span></div>
+      <div class="stat"><b>~USD 6,000</b><span>tournament earnings</span></div>
+    </div>
+    <div class="prose">
+      <p><strong>Brawlhalla, competing as <em>taxiivation</em>:</strong> Held Power Rank #1 in 2v2 in Asia across two consecutive seasons (Winter and Spring) and Power Rank #2 in 1v1 in Winter. Won Winter 2v2 2024, Winter 2v2 2025 and Winter 1v1 2025. Three Asian championship titles; 3 gold, 4 silver and 5 bronze medals. Approximately USD 6,000 in tournament earnings. Signed to Kingdom eSports and prolly2 eSports.</p>
+      <p><strong>Coaching:</strong> Ran a private Brawlhalla coaching community and coached paying players, including a former top-8 player who won the 2026 2v2 Summer Championships in Australia. Tutored friends in mathematics, physics and chemistry in high school over Miro, working problems live on a shared whiteboard.</p>
+      <p><strong>Community:</strong> A decade inside competitive gaming and live streaming communities as a player, coach and content creator.</p>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section aria-labelledby="skills">
+    <h2 id="skills">Technical Skills</h2>
+    <dl class="skills">
+      <dt>Languages</dt><dd>Python, TypeScript/JavaScript, C++, SQL, R, Bash</dd>
+      <dt>Data</dt><dd>PostgreSQL, Oracle SQL, SQLite/libSQL, MongoDB, Supabase, pandas, NumPy, data modelling, data quality and validation</dd>
+      <dt>Visualisation</dt><dd>Vega-Lite, Matplotlib, chart encoding and design</dd>
+      <dt>AI and agents</dt><dd>Multi-agent orchestration, agent frameworks, tool calling, retrieval-augmented generation, vector search and embeddings, knowledge graphs, prompt design, evaluation harnesses, PyTorch, deep learning</dd>
+      <dt>Cloud and infrastructure</dt><dd>AWS (Bedrock, Nova Sonic, S3, Fargate, Cognito), Docker, Vercel and edge runtimes, REST APIs, NDJSON streaming</dd>
+      <dt>Pipelines and automation</dt><dd>Scheduled batch jobs, idempotent recomputation, data ingestion and transformation, configuration as code, sync and dry-run scripting, version-controlled config</dd>
+      <dt>Web</dt><dd>Next.js, React, Node.js</dd>
+      <dt>Practices</dt><dd>Git, unit testing, CI via GitHub Actions, specification-first development, AI-assisted development (Claude Code, GitHub Copilot)</dd>
+      <dt>Media</dt><dd>Premiere Pro, After Effects, HitFilm, CapCut, Maya, motion graphics, VFX, kinetic type, captioning and subtitling (SRT, WebVTT), vertical editing for TikTok, Reels and Shorts</dd>
+      <dt>Currently learning</dt><dd>AWS Certified Data Engineer – Associate, dbt Fundamentals, orchestration tooling (Airflow, Dagster)</dd>
+      <dt>Spoken languages</dt><dd>English and Indonesian, both native</dd>
+    </dl>
+  </section>
+
+</main>
+<footer>© 2026 Danar Tan</footer>
+</body>
+</html>
