@@ -1,3 +1,0 @@
-# Only the public resume PDF is deployed; other PDFs (e.g. old exports) stay off the site
-*.pdf
-!danar_tan_resume.pdf
