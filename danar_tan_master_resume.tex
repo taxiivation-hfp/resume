@@ -1,0 +1,297 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\definecolor{linkblue}{RGB}{0,86,179}
+\hypersetup{colorlinks=true, urlcolor=linkblue, linkcolor=linkblue}
+\newcommand{\bluetext}[1]{\textcolor{linkblue}{#1}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeNote}[1]{\item[]\small{\textit{#1}}\vspace{-2pt}}
+\newcommand{\tbd}[1]{\textcolor{red}{\textbf{[#1]}}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Danar Tan} \\ \vspace{1pt}
+    \small +61 470 517 310 $|$ \href{mailto:danarrtan@gmail.com}{\underline{danarrtan@gmail.com}} $|$
+    \href{https://linkedin.com/in/danar-tan}{\underline{linkedin.com/in/danar-tan}} $|$ \href{https://github.com/taxiivation-hfp}{\underline{github.com/taxiivation-hfp}} $|$ Clayton, VIC 3168 \\ \vspace{2pt}
+    \footnotesize Working rights: Student visa (subclass 500) valid to 30 Aug 2027, 48 hours per fortnight in teaching periods, unlimited in breaks. \\
+    \footnotesize Eligible for Temporary Graduate visa (subclass 485) after graduation. \\ \vspace{2pt}
+    \footnotesize\textit{Master record --- not for submission. Cut a one-page version from this per application.} \\
+    \footnotesize\textit{\textcolor{red}{Red bracketed items} are placeholders to replace with real, measured figures before use.}
+\end{center}
+
+%-----------PROFILE-----------
+\section{Profile}
+  \small{Computer Science (Data Science and AI) student at Monash University completing July 2027, seeking graduate and internship roles in backend software, data engineering and AI/agent engineering.}
+  \vspace{-4pt}
+
+%-----------PROFILE VARIANTS (master only)-----------
+\section{Profile Variants}
+  \resumeSubHeadingListStart
+    \resumeNote{\textbf{Backend software:} Computer Science (Data Science and AI) student at Monash University, completing July 2027, and co-founder/engineer at Swotmate, a voice AI tutor. Built asynchronous tool calling that cut voice response latency by 52\% and deployed the system on AWS (Fargate, S3, Cognito) with Docker. Seeking backend software engineering internships and graduate roles.}
+    \resumeNote{\textbf{Data engineering:} Computer Science (Data Science and AI) student at Monash University (WAM 71.2, HD in Databases), completing July 2027. Built an ingestion pipeline that turned 1,516 textbook pages into retrieval-ready markdown with 95\% of equations intact, and migrated a 3-year log backlog into a libSQL analytics dashboard. Seeking data engineering internships and graduate roles.}
+    \resumeNote{\textbf{AI/agent engineering:} Computer Science (Data Science and AI) student at Monash University and co-founder/engineer at Swotmate, where I architected a three-agent voice tutoring system on AWS Bedrock, raised top-5 retrieval hit rate from 77\% to 91\% by keeping worked examples intact across chunks (measured with an offline evaluation harness I built), and cut response latency by 52\%. Top-8 finalist at the Forward AI in Business Hackathon with an outbound voice retention agent. Seeking AI and agent engineering roles.}
+    \resumeNote{\textbf{General internship/graduate:} Computer Science (Data Science and AI) student at Monash University, completing July 2027, who builds and ships: a multi-agent voice AI tutor on AWS as a startup co-founder, an outbound voice retention agent that reached the top 8 at a hackathon, and a personal analytics dashboard in daily use. Seeking software, data and AI internships and graduate roles.}
+    \resumeNote{\textbf{Startup/product:} Co-founder and engineer at Swotmate, taking a voice AI tutor from concept to working AWS prototype in a four-person team while studying Computer Science at Monash. Previously built two eSports media brands from zero, growing a TikTok account to 60k+ likes in two months while leading a five-person team. Seeking product-minded engineering roles at early-stage companies.}
+    \resumeNote{\textbf{Part-time/non-technical:} Reliable Monash University student with experience in high-accuracy legal document processing, fast-paced customer service, and disability support volunteering. Comfortable working to deadlines, following strict standards, and communicating clearly with diverse people.}
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education \& Relevant Coursework}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Monash University --- currently enrolled}{Clayton, VIC}
+      {Bachelor of Computer Science, Data Science and Artificial Intelligence}{Jul 2025 -- Jul 2027}
+      \resumeItemListStart
+        \resumeItem{WAM 71.2 (Distinction). Expected course completion July 2027; conferral late 2027.}
+        \resumeItem{Completed: Databases (FIT2094, HD 81), Fundamentals of Algorithms (FIT1008, D 78), Introduction to Data Science (FIT1043, D 71), Algorithms and Data Structures (FIT2004), Modelling for Data Analysis (FIT2086), Theory of Computation (FIT2014), Data Visualisation (FIT2179, Tableau, Vega-Lite), Research Experimentation and Discovery (MON3500, HD 81), Volunteering in Practice (MON2000), Industry Based Learning Seminar (FIT2108).}
+        \resumeItem{Current (Semester 2 2026): Artificial Intelligence (FIT3080), Deep Learning (FIT3181), Data Analytics (FIT3152), Deep Tech Entrepreneurship (FIT3195).}
+        \resumeItem{First-year units credited from the Jakarta International College diploma (listed below).}
+        \resumeItem{Awarded High Distinction and the Research for Translational Impact badge (MON3500) for a study on repurposing mRNA manufacturing capacity outside a pandemic.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Jakarta International College}{Jakarta, Indonesia}
+      {Diploma of Information Technology, credited to Monash --- WAM 75.56}{Jul 2024 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{Fundamentals of C++ (FIT1048, HD 92), Introduction to Computer Systems, Networks and Security (FIT1047, HD 89), IT Professional Practice (FIT1049, HD 88), Introduction to Programming (FIT1045, HD 87), Discrete Mathematics for Computer Science (MAT1830, HD 84), Engineering Mathematics (ENG1005, D 72), Foundations of Computing (FIT1058), Analysis of Change (MTH1020), Advanced Mathematics, Foundations of 3D (FIT1033, Maya).}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Swotmate --- edtech startup --- Voice AI Tutor for VCE Students}{Jul 2026 -- Present}
+      {Co-founder and Engineer, four-person founding team}{Melbourne, VIC}
+      \resumeItemListStart
+        \resumeNote{Founded through Monash's Deep Tech Entrepreneurship unit (FIT3195); taken from concept to working prototype alongside full-time study.}
+        \resumeNote{Stack: AWS Bedrock, Nova Sonic 2, Claude Sonnet, Python, TypeScript, Node.js, Docker.}
+        \resumeItem{Architected a three-agent framework: an orchestrator that plans each session and writes tier-specific prompts, a reasoning supervisor that acts per turn, marks answers and drives a shared whiteboard, and a voice model (AWS Nova Sonic 2) restricted to conversation.}
+        \resumeItem{Created an offline evaluation harness that scores retrieval quality and answer grounding against a fixed regression set before every change ships, using a local vector index behind the same interface as the Bedrock knowledge base; cut each test cycle from $\sim$10 minutes on AWS to under a minute so regressions are caught before deployment.}
+        \resumeItem{Implemented asynchronous tool calling that cut average response latency by 52\% (2,500 ms to 1,200 ms), letting the voice model start speaking while content is still streaming from the supervisor.}
+        \resumeItem{Retuned chunk boundaries and the sliding context window so worked examples are never split during mid-session retrieval, fixing cases where the tutor retrieved half a solution mid-explanation and raising top-5 retrieval hit rate from 77\% to 91\% on a 40-question regression set.}
+        \resumeItem{Built the RAG layer over AWS Bedrock, grounding every tutoring response in approved curriculum content and reducing ungrounded answers from 23\% to 9\% on the regression set.}
+        \resumeItem{Led the implementation of the three-phase teaching system (probe, plan, teach): the orchestrator quizzes the student to build a knowledge graph, binary-searches topic difficulty and depth to find the edge of that graph, then plans a roadmap targeting their zone of proximal development.}
+        \resumeItem{Built the document ingestion pipeline converting 2 VCE Mathematical Methods textbooks (1,516 pages) into clean markdown that chunks without breaking notation, keeping 95\% of equations intact as verified by a render comparison script.}
+        \resumeItem{Designed the multimodal interaction so a student can click any point on the shared whiteboard to ask about it, with the click routed to the supervisor on its own event channel; this let the tutor answer about the exact step without verbal description, cutting turns per question by 31\% (7.5 to 5.2) in test sessions.}
+        \resumeItem{Worked with teammates to deploy the system on AWS (Bedrock, S3, Fargate, Cognito) with Docker, at an estimated \$2 per tutoring hour in Bedrock costs.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Law Image}{May 2026 -- Present}
+      {Coding Clerk}{Melbourne CBD, VIC}
+      \resumeItemListStart
+        \resumeItem{Process and quality-check high-volume legal document sets to strict accuracy standards under tight turnaround times, in a structured, compliance-driven workflow.}
+        \resumeItem{Operate printing and scanning equipment, preparing documents to deadline.}
+        \resumeItem{Manage multiple concurrent workstreams and effectively escalate discrepancies.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {WIRED, Faculty of Information Technology Society, Monash University}{Aug 2026 -- Present}
+      {Media Officer}{Clayton, VIC}
+      \resumeItemListStart
+        \resumeItem{Edit reels for the club's Instagram and TikTok channels.}
+        \resumeItem{Led and organized the media team in the Voxpop for the flagship interclub collaborative networking event, Tech Futures Expo.}
+        \resumeItem{Create and edit reels to market WIRED events, workshops, and increase brand awareness.}
+        \resumeItem{Work closely with the marketing team to ideate and direct filming.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Flying Fox --- disability support program}{Feb 2026 -- Jun 2026}
+      {Volunteer Buddy}{St Kilda, VIC}
+      \resumeItemListStart
+        \resumeItem{Completed Flying Fox's skills-based Buddy training in disability, inclusion, communication and personal support before working with any participant.}
+        \resumeItem{Supported people with disability across weekly Hangouts of 20--30 participants, running inclusive recreational activities.}
+        \resumeItem{Tailored communication to each participant's access needs over five months of weekly sessions, adjusting explanations, pace and format to individual needs and differences.}
+        \resumeItem{Worked alongside other volunteers and external organizations to keep programs safe, structured and predictable for participants.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{http://x.com/taxii_vfx/all}{\underline{taxii\_vfx}} --- editing since 2016}{2024 -- Present}
+      {Freelance Video Editor and Motion Graphics Designer}{Remote}
+      \resumeItemListStart
+        \resumeItem{Created promos and tournament trailers for eSports organizations including prolly2, Moose Wars and Brawl League, with one trailer exceeding 130,000 views.}
+        \resumeItem{Led creative direction through ideating, storyboarding, asset creation, visual effects, and video editing across concurrent projects.}
+        \resumeItem{Edited for 6 clients (through networks and Fiverr), including 3 high-profile eSports organizations who all came back for repeat work.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Brawlhalla Media Project (\href{https://www.tiktok.com/@sidesigalex}{\underline{SideSigAlex}}, \href{https://www.youtube.com/@thenixup}{\underline{NixUp}})}{Apr 2025 -- Jun 2025}
+      {Content Team Lead}{Remote}
+      \resumeItemListStart
+        \resumeItem{Built two social media brands from the ground up --- long-form on YouTube and short-form on Shorts and TikTok.}
+        \resumeItem{Grew the TikTok account from zero to 60k+ likes across 20 videos in two months with a top video passing 300k views and 33k likes, covering eSports clips, gameplay analyses, and tips.}
+        \resumeItem{Launched a YouTube channel that passed 10,000 views in its first week, covering the politics of the Brawlhalla competitive scene, drama between top players, and general news as it broke.}
+        \resumeItem{Assembled and led a five-person cross-functional team of a voice actor, scriptwriters, a marketing lead and myself working across planning, scripting, editing and publishing.}
+        \resumeItem{Taught two team members the full short-form workflow in Premiere Pro, from sourcing, editing, captions, keyframing, visual effects, sound design, to publishing.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {KebabX}{Oct 2025 -- May 2026}
+      {Crew Member}{Clayton, VIC}
+      \resumeItemListStart
+        \resumeItem{Served customers in a fast-paced food environment, prepared menu items to food safety and hygiene standards, and processed cash and EFTPOS payments.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Retention Router} $|$ \emph{Python, TypeScript, Claude API, Supabase/Postgres, ElevenLabs, Twilio}}{Sep 2026}
+          \resumeItemListStart
+            \resumeItem{Forward: AI in Business Hackathon --- shortlisted to the top 8 finalists to pitch to judges.}
+            \resumeItem{Assembled and led a four-person team to build an outbound voice agent (Twilio, ElevenLabs) that automatically calls gym members to renew memberships and re-engage inactive members.}
+            \resumeItem{Extended the agent to win-back calls for past members and those requesting cancellation.}
+            \resumeItem{Designed the call-targeting algorithm using Radcliffe and Surry's uplift modeling for retention campaigns, flagging the members most likely to be swayed by a call.}
+            \resumeItem{Segmented members into four types (membership ending soon, lapsed but live, former members, and cancellation requests), each handled by an ElevenLabs agent with its own engineered system prompt, objectives and offer policy.}
+            \resumeItem{Built an onboarding system with the Claude API that parses a business's PDF sales handbook and auto-fills a setup form, mapping each field as a dynamic variable into the agents' system prompts.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Personal Analytics Dashboard} $|$ \emph{Next.js, TypeScript, Claude API, libSQL/Turso, Vercel}}{Aug 2026 -- Present}
+          \resumeItemListStart
+            \resumeItem{Built a personal daily tracker that combines previously disjointed journals, calendars, and metrics (steps, gym logs, calories) into one dashboard that tracks adherence.}
+            \resumeItem{Migrated a 3-year backlog of gym session logs from a mobile tracking app.}
+            \resumeItem{Built a stylus and touch surface for the journal diary where a pen draws and a finger scrolls, disambiguated through Pointer Events ordering.}
+            \resumeItem{Analyzed a month of daily-use data and found that tasks planned in the early morning (around 6 AM) had the highest adherence; restructured my daily routine around the findings, raising average weekly adherence from 66\% to 87\%.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------ESPORTS-----------
+\section{Competitive eSports and Coaching}
+  \resumeSubHeadingListStart
+    \item[]
+    \resumeItemListStart
+      \resumeItem{Brawlhalla, competing as taxiivation: Held Power Rank \#1 in 2v2 in Asia across two consecutive seasons (Winter and Spring) and Power Rank \#2 in 1v1 in Winter. Won the Winter 2v2 2024, Winter 2v2 2025 and Winter 1v1 2025 Asia championships. 3 gold, 4 silver and 5 bronze medals. Approximately USD 6,000 in tournament earnings. Signed to Kingdom eSports and prolly2 eSports.}
+      \resumeItem{Migrated to Australia where I became the first person to beat the \#1 ranked Australian player in two years, breaking Asmodie's 16-tournament win streak in 1v1 and her year-long win streak in 2v2.}
+      \resumeItem{Coaching: Ran a private Brawlhalla coaching community and coached paying players, including coaching a former top-8 player to win the 2026 2v2 Summer Championships in Australia.}
+      \resumeItem{Tutored friends in mathematics, physics and chemistry in high school, working problems live on a shared whiteboard over Miro.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------AWARDS-----------
+\section{Awards and Achievements}
+  \resumeSubHeadingListStart
+    \item[]
+    \resumeItemListStart
+      \resumeItem{Top 8 finalist, Forward: AI in Business Hackathon (2026), Retention Router.}
+      \resumeItem{Research for Translational Impact badge and High Distinction, Monash MON3500 (mRNA manufacturing capacity study).}
+      \resumeItem{Three-time Brawlhalla Asia champion (Winter 2v2 2024, Winter 2v2 2025, Winter 1v1 2025); Power Rank \#1 in Asia 2v2 for two seasons.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TRAINING-----------
+\section{Training and Certifications}
+  \resumeSubHeadingListStart
+    \item[]
+    \resumeItemListStart
+      \resumeItem{Flying Fox Buddy training: disability, inclusion, communication and personal support (2026).}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Proficient Skills} \\
+     \textbf{Languages}{: Python, SQL, Bash, C++, R} \\
+     \textbf{AI and Agents}{: Multi-agent orchestration, tool calling, retrieval-augmented generation (RAG), vector search, evaluation harnesses} \\
+     \textbf{Tools}{: Git, GitHub, Vercel, Claude API, ElevenLabs, Twilio} \\
+     \textbf{Spoken Languages}{: English and Indonesian, both native proficiency} \\[4pt]
+     \textbf{Familiar Skills} \\
+     \textbf{Languages}{: TypeScript/JavaScript} \\
+     \textbf{Web}{: Next.js, React, Node.js} \\
+     \textbf{Cloud and DevOps}{: AWS (Bedrock, S3, Fargate, Cognito), Docker, GitHub Actions} \\
+     \textbf{Data}{: PostgreSQL, SQLite/libSQL, Supabase, MongoDB, Oracle SQL, pandas, NumPy} \\
+     \textbf{ML and Visualization}{: PyTorch, Matplotlib, Vega-Lite, Tableau}
+    }}
+ \end{itemize}
+
+%-----------MEDIA SKILLS (optional)-----------
+\section{Media Skills (optional --- include for media-adjacent roles)}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Video and Motion}{: Premiere Pro, After Effects, HitFilm, CapCut} \\
+     \textbf{Audio and 3D}{: Audacity, Maya}
+    }}
+ \end{itemize}
+
+%-----------REFEREES-----------
+\section{Referees}
+  \resumeSubHeadingListStart
+    \item[]
+    \resumeItemListStart
+      \resumeItem{\tbd{Name}, \tbd{Title}, \tbd{Organization} --- \tbd{phone / email}.}
+      \resumeItem{\tbd{Name}, \tbd{Title}, \tbd{Organization} --- \tbd{phone / email}.}
+      \resumeItem{For submitted versions: ``Referees available on request.''}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------LINKS BANK-----------
+\section{Links Bank}
+  \resumeSubHeadingListStart
+    \item[]
+    \resumeItemListStart
+      \resumeItem{GitHub: \href{https://github.com/taxiivation-hfp}{\underline{github.com/taxiivation-hfp}} $|$ LinkedIn: \href{https://linkedin.com/in/danar-tan}{\underline{linkedin.com/in/danar-tan}}}
+      \resumeItem{Video portfolio: \href{http://x.com/taxii_vfx/all}{\underline{x.com/taxii\_vfx}} $|$ NixUp: \href{https://www.youtube.com/@thenixup}{\underline{youtube.com/@thenixup}} $|$ SideSigAlex: \href{https://www.tiktok.com/@sidesigalex}{\underline{tiktok.com/@sidesigalex}}}
+      \resumeItem{Swotmate demo: \tbd{link} $|$ Retention Router repo: \tbd{link} $|$ Personal Analytics Dashboard repo: \tbd{link}}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}
