@@ -16,4 +16,3 @@ The build is just: tectonic.exe danar_tan_resume.tex -> danar_tan_resume.pdf. Te
 4. Run `tectonic.exe danar_tan_resume.tex` from the scratchpad folder. It downloads the LaTeX packages it needs on first run. The "Fontconfig error: Cannot load default config file" message is harmless; success ends with "Writing `danar_tan_resume.pdf`".
 5. Copy the resulting danar_tan_resume.pdf back over the one in the repo.
 
-You do not need to view or check the PDF (no page count or layout checks). The user reviews it themselves. Just build it, copy it over, and commit and push the .tex and .pdf when asked.
